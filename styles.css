@@ -1,14 +1,44 @@
+*{
+  font-family: 'Bebas Neue', cursive;
+}
 body {
     background-color: #aca0a0;
    }
+
+img:hover {
+/* Start the shake animation and make the animation last for 0.5 seconds */
+animation: shake 0.5s;
+
+}
+
+@keyframes shake {
+
+  100% { transform: translate(10px, -2px) rotate(-1deg); }
+}
+
+button {
+  background-color: #fff;
+  border-radius: 50px;
+  font-weight: bold;
+  border-style: none ;
+  margin: 100px;
+  font-size: 25px;
+}
+
+button:hover {
+  border-style: groove;
+  border-color: #000;
+}
 
 .title{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fcfcfc;   
-    margin-bottom: 200px; 
     border-radius: 100px;
+    font-size: 1em;
+    min-width: 250px;
+    margin-bottom: 100px;
 }
 
 .diceContent {
@@ -18,14 +48,3 @@ body {
     flex-direction: column;
     text-align: center;
 }
-
-img:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
-    animation: shake 0.5s;
-  
-  }
-  
-  @keyframes shake {
-
-    100% { transform: translate(10px, -2px) rotate(-1deg); }
-  }
